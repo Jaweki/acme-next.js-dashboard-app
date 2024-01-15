@@ -1,0 +1,10 @@
+.loading {
+    animation: .6s ease-in-out infinite rotate-spinner;
+    border-width: 7px;
+}
+
+@keyframes rotate-spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
