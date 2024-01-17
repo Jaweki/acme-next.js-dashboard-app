@@ -8,11 +8,12 @@ import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
 
 // add searchParams as props for server-side component...
+// Anotated Page.tsx props to be readonly (Typescript)...
 export default async function Page({
   searchParams,
-}: {
+}: Readonly<{
   searchParams?: { query?: string; page?: string };
-}) {
+}>) {
   const query = searchParams?.query || '';
   const currentPage = Number(searchParams?.page) || 1;
 
