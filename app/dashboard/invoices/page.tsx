@@ -7,8 +7,7 @@ import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
 
-
-// edit comment...
+// add searchParams as props for server-side component...
 export default async function Page({
   searchParams,
 }: {
