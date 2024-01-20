@@ -8,6 +8,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { Button } from '@/app/ui/button';
 
+// make the props of a component readonly using typescript.
 export default function Form({
   customers,
 }: Readonly<{ customers: CustomerField[] }>) {
